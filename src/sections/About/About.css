@@ -1,0 +1,42 @@
+.about {
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-title {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 15vh;
+}
+
+.about-content {
+    flex: 1
+    
+}
+
+.about-image {
+    padding-right: 2vw;
+    min-width: 25rem;
+    min-height: auto;
+    width: 25rem;
+    height: auto;
+}
+
+.life-story {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 10%
+}
+
+@media (max-width: 900px), (min-height: 1080px) {
+    @media (max-width: 900px) {
+        .about-image {
+            min-width: 25rem;
+            min-height: auto;
+        }
+    }
+}

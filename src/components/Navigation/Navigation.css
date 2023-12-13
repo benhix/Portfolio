@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.benhix {
+    float: left;
+    padding-left: 1.5rem;
+}
+
+.layout {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 60px; /* Set the height */
+    background-color: white;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    z-index: 200;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.layout-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0; /* Menu is initially hidden */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white; /* Menu background color */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    transition: 0.5s; /* Smooth transition effect */
+    padding-top: 60px; /* Spacing at the top */
+    z-index: -1;
+}
+
+.side-menu.open {
+    width: 100vh; /* Width of the menu when it's open */
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 40%;
+    gap: 1rem;
+}
+
+.mobile-item {
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Hide full navbar and show icon when on mobile */
+@media (max-width: 900px), (min-height: 1080px) {
+    .layout-item {
+        display: none;
+        
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    
+}

@@ -1,0 +1,36 @@
+.projects {
+    height: 150vh;
+    
+}
+
+.grid-container {
+    background-color: #F7F7F7;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    grid-template-rows: repeat(6, auto); /* Six rows, height set automatically based on content */
+    gap: 10px; /* Space between grid items */
+    width: 100%;
+
+}
+
+
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 1vh;
+}
+
+.bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    /* Additional styles for images */
+}
+
+.text {
+    /* Additional styles for text */
+}

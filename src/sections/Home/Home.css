@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.home-main {
+    background-color: #F7F7F7;
+    /* height: 100vh; */
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20vh;
+    height: 100vh;
+    width: 100%;
+}
+
+.home-text {
+    color: #454545;
+    font-size: 3.5rem;
+    margin: 5vh;
+    align-items: center;
+    padding-top: 10rem;
+    position: relative;
+    
+}
+
+.bio {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    padding-top: 3vh;
+    padding-right: 9vw;
+    
+}
+
+.profile-image {
+    /* Adjust the size of the circle here */
+    width: 30rem; 
+    height: auto; 
+    border-radius: 50%;
+    border: 3px solid black;
+    overflow: hidden;
+    display: flex; /* To center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-left: 7vw;
+    animation: squiggly-border 7s infinite alternate;
+    min-width: 30rem;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; /* This will ensure the image covers the whole circle */
+    object-position: center; /* Adjust this to focus on a specific part of the image */
+}
+
+/* Tech Stack Styling */
+
+.stackimg {
+    width: 20rem;
+    height: auto;
+    padding-top: 5rem;
+    align-self: center;
+}
+
+.gitimg {
+    width: 3rem;
+    height: auto;
+    padding-top: 2rem;
+    align-self: center;
+}
+
+
+
+
+
+@keyframes squiggly-border {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+
+
+
+@media (max-width: 900px), (min-height: 1080px) {
+    @media (max-width: 900px) {
+        .home-main {
+            flex-direction: column;
+            justify-content: center; /* Changed to 'flex-start' to align items from the top */
+            align-items: center;
+            gap: 1rem; /* Reduced gap */
+            width: 100%;
+            height: auto; /* Changed to 'auto' to accommodate content */
+            text-align: center;
+        }
+    
+        .home-text {
+            padding-top: 1rem; /* Reduced padding-top */
+        }
+    
+        .profile-image {
+            width: 50%; /* Increased width */
+            height: auto;
+            margin-top: 5rem; /* Reduced margin-top */
+            align-self: center;
+        }
+    
+        .stackimg {
+            width: 20rem; 
+            height: auto; 
+            align-self: center;
+            display: inline-block;
+            align-items: center; 
+        }
+
+        .gitimg {
+            width: 3rem;
+            height: auto;
+            display: inline-block;
+            padding-bottom: 1rem;
+            margin-right: 5rem;
+            
+            
+            
+        }
+
+        .bio {
+            padding: 0;
+            margin-top: 3rem;
+        }
+    }
+}
