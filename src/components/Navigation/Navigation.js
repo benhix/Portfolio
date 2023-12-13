@@ -16,9 +16,6 @@ function Navigation() {
 
   return (
     <nav className="layout">
-      <div className="benhix">
-        <p>benhix</p>
-      </div>
       <ul>
         <li className="layout-item">
           <Link
