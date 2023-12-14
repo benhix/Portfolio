@@ -54,6 +54,18 @@ function Navigation() {
             Projects
           </Link>
         </li>
+        <li className="layout-item">
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70} // Offset for fixed navbar, adjust as needed
+            duration={500}
+          >
+            Contact
+          </Link>
+        </li>
         {/* Add links for other sections */}
       </ul>
 
@@ -105,6 +117,18 @@ function Navigation() {
                 Projects
               </Link>
             </li>
+            <li className="layout-item">
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70} // Offset for fixed navbar, adjust as needed
+            duration={500}
+          >
+            Contact
+          </Link>
+        </li>
             {/* Add links for other sections */}
           </ul>
         </nav>

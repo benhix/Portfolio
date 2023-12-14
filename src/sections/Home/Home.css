@@ -25,6 +25,7 @@
     font-family: 'Montserrat', sans-serif;
     color: black;
     margin-bottom: 4rem;
+    margin-top: 2rem;
 }
 
 .profile-image {
@@ -53,7 +54,7 @@
 .stackimg {
     width: 20rem;
     height: auto;
-    display: inline-bl;
+    display: inline-block;
     align-self: center;
 }
 
@@ -61,6 +62,7 @@
     width: 3rem;
     height: auto;
     padding-top: 2rem;
+    padding-bottom: 2rem;
     align-self: center;
 }
 
@@ -84,52 +86,57 @@
 
 
 @media (max-width: 900px), (min-height: 1080px) {
-    @media (max-width: 900px) {
-        .home-main {
-            flex-direction: column;
-            justify-content: center; /* Changed to 'flex-start' to align items from the top */
-            align-items: center;
-            gap: 1rem; /* Reduced gap */
-            width: 100%;
-            height: auto; /* Changed to 'auto' to accommodate content */
-            text-align: center;
-        }
+    .home-main {
+        flex-direction: column;
+        justify-content: center; /* Changed to 'flex-start' to align items from the top */
+        align-items: center;
+        gap: 1rem; /* Reduced gap */
+        width: 100%;
+        height: auto; /* Changed to 'auto' to accommodate content */
+        text-align: center;
+    }
 
-        .home-text {
-            font-size: 2.5rem;
-        }
-    
-        .home-text {
-            padding-top: 1rem; /* Reduced padding-top */
-        }
-    
-        .profile-image {
-            width: 30%; /* Increased width */
-            height: auto;
-            margin-top: 5rem; /* Reduced margin-top */
-            align-self: center;
-            min-width: none;
-        }
-    
-        .stackimg {
-            width: 20rem; 
-            height: auto; 
-            align-self: center;
-            display: inline-block;
-            align-items: center; 
-        }
+    .home-text {
+        font-size: 2.5rem;
+    }
 
-        .gitimg {
-            width: 3rem;
-            height: auto;
-            display: inline-block;
-            padding-bottom: 1rem;
-            margin-right: 5rem;
-        }
+    .home-text {
+        padding-top: 1rem; /* Reduced padding-top */
+    }
 
-        .bio {
-            padding: 0;
-            margin-top: 3rem;
-        }
+    .profile-image {
+        width: 55%; /* Increased width */
+        height: auto;
+        margin-top: 5rem; /* Reduced margin-top */
+        align-self: center;
+        min-width: 30%;
+    }
+
+    .stackimg {
+        width: 20rem; 
+        height: auto; 
+        align-self: center;
+        display: inline-block;
+        align-items: center; 
+    }
+
+    .gitimg {
+        width: 3rem;
+        height: auto;
+        display: inline-block;
+        padding-bottom: 1rem;
+        margin-right: 5rem;
+    }
+
+    .bio {
+        padding: 0;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 465px) {
+    .gitimg {
+        margin-left: 5rem;
+        
     }
 }

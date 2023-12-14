@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .about-title {
@@ -20,9 +19,7 @@
 
 .about-image {
     padding-right: 2vw;
-    min-width: 27rem;
-    min-height: auto;
-    width: 27rem;
+    width: 280rem;
     height: auto;
 }
 
@@ -33,19 +30,21 @@
 }
 
 @media (max-width: 900px), (min-height: 1080px) {
-    @media (max-width: 900px) {
-        .about-image {
-            min-width: 27rem;
-            min-height: auto;
-        }
+    .about-image {
+        width: 22rem; 
+    }
 
-        .life-story {
-            font-size: 0.8rem;
-        }
+    .life-story {
+        font-size: 1rem;
+    }
 
-        .about {
-            display: flex;
-            flex-direction: column-reverse;
-        }
+    .about {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-image {
+        width: 12rem;
     }
 }
