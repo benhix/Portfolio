@@ -42,5 +42,10 @@
         .life-story {
             font-size: 0.8rem;
         }
+
+        .about {
+            display: flex;
+            flex-direction: column-reverse;
+        }
     }
 }
