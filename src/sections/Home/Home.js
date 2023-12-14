@@ -8,7 +8,7 @@ import './Home.css';
 
 function Home() {
     return (
-        <div className="home-main">
+        <div className="home">
             <div className="profile-image">
                 <img src={profile} />
             </div>

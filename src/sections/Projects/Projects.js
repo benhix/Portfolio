@@ -9,7 +9,7 @@ function Projects() {
     return (
         <section>
 
-            <div className="projects-title">
+            <div className="projects">
                 <h2>Projects</h2>
             </div>
 
@@ -37,7 +37,10 @@ function Projects() {
                         </div>    
                         <div className="text-section">
                             <h2 className="title">Password Generator</h2>
-                            <p className="bio">Cybersecurity is a passion for me so it seemed obvious to design a password generator. Built with React and Tailwind, it has options like enabling punctuation and adding hyphens to make it easier to type</p>    
+                            <p className="bio">Built with React and Tailwind, it has options like enabling punctuation and adding hyphens to make it easier to type</p>    
+                            <a href="https://benhix.github.io/Password-Generator/">
+                                <p className="demo">Demo</p>
+                            </a>
                             <a href="https://github.com/benhix/Password-Generator">
                                 <img className="git-link-passgen" src={gitimg} />
                             </a>

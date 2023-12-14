@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-.home-main {
+.home {
     background-color: #F7F7F7;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@
 }
 
 .gitimg {
-    width: 3rem;
+    width: 1em;
     height: auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -86,7 +86,7 @@
 
 
 @media (max-width: 900px), (min-height: 1080px) {
-    .home-main {
+    .home {
         flex-direction: column;
         justify-content: center; /* Changed to 'flex-start' to align items from the top */
         align-items: center;
@@ -121,7 +121,7 @@
     }
 
     .gitimg {
-        width: 3rem;
+        width: 1.6em;
         height: auto;
         display: inline-block;
         padding-bottom: 1rem;
@@ -134,7 +134,7 @@
     }
 }
 
-@media (max-width: 465px) {
+@media (max-width: 480px) {
     .gitimg {
         margin-left: 5rem;
         

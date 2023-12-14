@@ -32,7 +32,7 @@ function Navigation() {
         <li className="layout-item">
           <Link
             activeClass="active"
-            to="about"
+            to="about-section"
             spy={true}
             smooth={true}
             offset={-70} // Offset for fixed navbar, adjust as needed
@@ -94,7 +94,7 @@ function Navigation() {
             <li className="mobile-item">
               <Link
                 activeClass="active"
-                to="about"
+                to="about-section"
                 spy={true}
                 smooth={true}
                 offset={-70} // Offset for fixed navbar, adjust as needed
@@ -117,18 +117,19 @@ function Navigation() {
                 Projects
               </Link>
             </li>
-            <li className="layout-item">
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70} // Offset for fixed navbar, adjust as needed
-            duration={500}
-          >
-            Contact
-          </Link>
-        </li>
+            <li className="mobile-item">
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70} // Offset for fixed navbar, adjust as needed
+                duration={500}
+                onClick={closeMenu}
+              >
+                Contact
+              </Link>
+            </li>
             {/* Add links for other sections */}
           </ul>
         </nav>

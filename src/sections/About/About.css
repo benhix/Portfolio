@@ -9,7 +9,7 @@
 .about-title {
     text-align: center;
     font-size: 40px;
-    padding-top: 15vh;
+    padding-top: 4vh;
 }
 
 .about-content {
@@ -45,6 +45,6 @@
 
 @media (max-width: 600px) {
     .about-image {
-        width: 12rem;
+        width: 18rem;
     }
 }
