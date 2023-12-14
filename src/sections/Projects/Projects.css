@@ -1,52 +1,67 @@
-.projects-title {
+/* Projects.css */
+
+section {
+    padding: 20px;
+  }
+  
+  .projects-title {
     display: flex;
     justify-content: center;
     font-size: 3rem;
     background-color: #F7F7F7;
     box-shadow: 0 0 10px rgba(0,0,0,.09);
     padding-bottom: 1rem;
-}
-
-.image-section {
+  }
+  
+  .grid-container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .tile {
+    width: 45%; /* Adjust the width as needed */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    
-}
-
-
-.image-section img {
-    max-width: 45%; 
-    height: auto; 
-    align-self: center;
-    justify-content: center;
-    
-}
-
-.text-section {
-    margin-left: 14rem;
-}
-
-
-
-.title {
+  }
+  
+  .image-section {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .image-section img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto;
+  }
+  
+  .text-section {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .title {
     font-size: 2rem;
-    padding-left: 20rem;
-    padding-bottom: 2rem;
-    margin: 0;
-    white-space: nowrap;
-}
+    margin-bottom: 10px;
+  }
+  
+  .bio {
+    font-size: 1.5rem;
+    color: #555;
+  }
 
-.facerec img {
-    margin-right: 15rem;
-}
+  .git-link-passgen {
+    width: 10%;
+    height: auto;
+    float: right;
+  }
 
-.passgen-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin-left: 21.2rem;
-}
-        
-    
+  .git-link-facerec {
+    width: 10%;
+    height: auto;
+    float: left;
+  }
+  

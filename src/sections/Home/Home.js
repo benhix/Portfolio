@@ -21,7 +21,7 @@ function Home() {
                                 from Adelaide, Australia 📍
                             </p>
                             <div className="gitimg">
-                                <a href="https://www.https://github.com/benhix">
+                                <a href="https://github.com/benhix">
                                     <img src={gitimg} />
                                 </a>
                             </div>
