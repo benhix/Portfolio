@@ -29,15 +29,14 @@
 }
 
 .profile-image {
-    /* Adjust the size of the circle here */
     width: 30rem; 
     height: auto; 
     border-radius: 50%;
     border: 3px solid black;
     overflow: hidden;
-    display: flex; /* To center the image */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     animation: squiggly-border 7s infinite alternate;
     min-width: 30rem;
 }
@@ -45,8 +44,8 @@
 .profile-image img {
     width: 100%;
     height: auto; 
-    object-fit: cover; /* This will ensure the image covers the whole circle */
-    object-position: center; /* Adjust this to focus on a specific part of the image */
+    object-fit: cover; 
+    object-position: center; 
 }
 
 /* Tech Stack Styling */
@@ -88,11 +87,11 @@
 @media (max-width: 900px), (min-height: 1080px) {
     .home {
         flex-direction: column;
-        justify-content: center; /* Changed to 'flex-start' to align items from the top */
+        justify-content: center;
         align-items: center;
-        gap: 1rem; /* Reduced gap */
+        gap: 1rem;
         width: 100%;
-        height: auto; /* Changed to 'auto' to accommodate content */
+        height: auto;
         text-align: center;
     }
 
@@ -101,13 +100,13 @@
     }
 
     .home-text {
-        padding-top: 1rem; /* Reduced padding-top */
+        padding-top: 1rem; 
     }
 
     .profile-image {
-        width: 55%; /* Increased width */
+        width: 55%; 
         height: auto;
-        margin-top: 5rem; /* Reduced margin-top */
+        margin-top: 5rem; 
         align-self: center;
         min-width: 30%;
     }
@@ -136,7 +135,6 @@
 
 @media (max-width: 480px) {
     .gitimg {
-        margin-left: 5rem;
-        
+        margin-left: 5rem; 
     }
 }
