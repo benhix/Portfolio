@@ -8,8 +8,8 @@
 .layout {
     position: fixed;
     top: 0;
-    width: 100%; /* Full width */
-    height: 60px; /* Set the height */
+    width: 100%; 
+    height: 60px; 
     background-color: white;
     text-align: right;
     padding-right: 20px;
@@ -33,20 +33,20 @@
 
 .side-menu {
     height: 100%;
-    width: 0; /* Menu is initially hidden */
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: white; /* Menu background color */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    transition: 0.5s; /* Smooth transition effect */
-    padding-top: 60px; /* Spacing at the top */
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; 
     z-index: -1;
 }
 
 .side-menu.open {
-    width: 100vh; /* Width of the menu when it's open */
+    width: 100vh;
 }
 
 .mobile-menu {
@@ -64,7 +64,7 @@
     font-size: 25px;
 }
 
-/* Hide full navbar and show icon when on mobile */
+
 @media (max-width: 900px), (min-height: 1080px) {
     .layout-item {
         display: none;

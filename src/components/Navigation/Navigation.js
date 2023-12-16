@@ -1,6 +1,6 @@
 // Navigation.js
 import React, { useState } from "react";
-import { Link, Element, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import { Link } from "react-scroll";
 import './Navigation.css';
 
 function Navigation() {
@@ -23,7 +23,7 @@ function Navigation() {
             to="home"
             spy={true}
             smooth={true}
-            offset={-70} // Offset for fixed navbar, adjust as needed
+            offset={-70}
             duration={500}
           >
             Home
@@ -35,7 +35,7 @@ function Navigation() {
             to="about-section"
             spy={true}
             smooth={true}
-            offset={-70} // Offset for fixed navbar, adjust as needed
+            offset={-70} 
             duration={500}
           >
             About
@@ -47,7 +47,7 @@ function Navigation() {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-70} // Offset for fixed navbar, adjust as needed
+            offset={-70} 
             duration={500}
             onClick={closeMenu}
           >
@@ -60,13 +60,12 @@ function Navigation() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-70} // Offset for fixed navbar, adjust as needed
+            offset={-70} 
             duration={500}
           >
             Contact
           </Link>
         </li>
-        {/* Add links for other sections */}
       </ul>
 
       <div className="menu-icon" onClick={toggleMenu}>
@@ -84,7 +83,7 @@ function Navigation() {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={-70} // Offset for fixed navbar, adjust as needed
+                offset={-70} 
                 duration={500}
                 onClick={closeMenu}
               >
@@ -97,7 +96,7 @@ function Navigation() {
                 to="about-section"
                 spy={true}
                 smooth={true}
-                offset={-70} // Offset for fixed navbar, adjust as needed
+                offset={-70} 
                 duration={500}
                 onClick={closeMenu}
               >
@@ -110,7 +109,7 @@ function Navigation() {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-70} // Offset for fixed navbar, adjust as needed
+                offset={-70} 
                 duration={500}
                 onClick={closeMenu}
               >
@@ -123,14 +122,13 @@ function Navigation() {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-70} // Offset for fixed navbar, adjust as needed
+                offset={-70} 
                 duration={500}
                 onClick={closeMenu}
               >
                 Contact
               </Link>
             </li>
-            {/* Add links for other sections */}
           </ul>
         </nav>
       )}
