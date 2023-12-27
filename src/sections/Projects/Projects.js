@@ -37,10 +37,8 @@ function Projects() {
                         </div>    
                         <div className="text-section">
                             <h2 className="title">Satellite Tracker</h2>
-                            <p className="bio">Search and track satellites in orbit. Built with python using data from N2YO API and Qt for GUI </p>    
+                            <p className="bio">Search and track satellites in orbit. Built with python using data from N2YO API and Qt for GUI </p>   
                             <a href="https://github.com/benhix/satellite_tracker">
-                            </a>
-                            <a href="https://github.com/benhix/Password-Generator">
                                 <img className="git-link-sattrack" src={gitimg} />
                             </a>
                         </div>
