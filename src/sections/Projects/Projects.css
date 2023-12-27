@@ -52,7 +52,7 @@ section {
     color: #555;
   }
 
-  .git-link-passgen {
+  .git-link-sattrack {
     width: 10%;
     height: auto;
     float: right;
@@ -126,7 +126,7 @@ section {
             color: #555;
           }
           
-          .git-link-passgen,
+          .git-link-sattrack,
           .git-link-facerec {
             width: 10%;
             height: auto;

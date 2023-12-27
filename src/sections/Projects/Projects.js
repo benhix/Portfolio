@@ -1,5 +1,5 @@
 import React from "react";
-import passgenimg from '../../assets/images/passgen.png';
+import sattrackimg from '../../assets/images/sat_track.png';
 import facerecimg from '../../assets/images/facerec.png';
 import gitimg from '../../assets/images/github.png';
 
@@ -31,18 +31,17 @@ function Projects() {
                 </div>
 
                 <div className="tile">
-                    <div className="passgen">
+                    <div className="sattrack">
                         <div className="image-section">
-                            <img src={passgenimg} />
+                            <img src={sattrackimg} />
                         </div>    
                         <div className="text-section">
-                            <h2 className="title">Password Generator</h2>
-                            <p className="bio">Built with React and Tailwind, it has options like enabling punctuation and adding hyphens to make it easier to type</p>    
-                            <a href="https://benhix.github.io/Password-Generator/">
-                                <p className="demo">Demo</p>
+                            <h2 className="title">Satellite Tracker</h2>
+                            <p className="bio">Search and track satellites in orbit. Built with python using data from N2YO API and Qt for GUI </p>    
+                            <a href="https://github.com/benhix/satellite_tracker">
                             </a>
                             <a href="https://github.com/benhix/Password-Generator">
-                                <img className="git-link-passgen" src={gitimg} />
+                                <img className="git-link-sattrack" src={gitimg} />
                             </a>
                         </div>
                     </div>
