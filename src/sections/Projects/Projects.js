@@ -1,6 +1,6 @@
 import React from "react";
 import sattrackimg from '../../assets/images/sat_track2.png';
-import facerecimg from '../../assets/images/facerec.png';
+import facerecimg from '../../assets/images/face_rec_v2.png';
 import gitimg from '../../assets/images/github.png';
 
 import './Projects.css';
